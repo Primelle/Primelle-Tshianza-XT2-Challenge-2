@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+#datumDag{
+		font-size:1.1rem;
+		margin-top:30px;
+	}
+
+#groet{
+	font-size: 1.4rem;
+	animation-duration: 1s;
+	animation-iteration-count: 3;
+}
+
+
+#tekstje{ 
+	font-size: 2rem;
+	text-align:center;
+	font-weight:600;
+	margin-top:55px;
+}
+
+.land{
+	font-size: 2.2rem;
+	clear:left;
+	font-weight:700;
+	display: block;
+}
+
+#deKlok {
+    font-family: 'Barlow Semi Condensed';
+    font-size: 8rem;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	margin-top:65px; 
+}
+
+
+#afbeeldingDag{
+	height:250px;
+	background-repeat: no-repeat;
+  	background-size: contain;
+  	background-position: center;
+  	margin-top:170px;
+  	width:100%;
+}
+
+
+
+/*OCHTEND*/
+
+.achtergrond_ochtend{
+	background-color:#F8F8E7;
+}
+.datumkleur_ochtend , .groetkleur_ochtend{
+	color:#707070;
+}
+.afbeelding_ochtend{	
+	background-image: url("img/ochtend.jpg");
+}
+
+.tijdskleur_ochtend{
+	color:#D3CFBB;
+}
+
+.landkleur_ochtend{
+	color:#BFBCA7;
+}
+
+
+
+/*MIDDAG*/
+
+.achtergrond_middag{
+	background-color: #E8F4F4;
+}
+
+.datumkleur_middag , .groetkleur_middag{
+	color:#707070;
+}
+
+.tijdskleur_middag{
+	color:#BED6D8;
+}
+
+.landkleur_middag{
+	color: #9BADAF;
+}
+
+.afbeelding_middag{
+	background-image:url("img/middag.jpg");
+}
+
+
+
+/*AVOND*/
+
+.datumkleur_avond , .groetkleur_avond{
+	color:#ffffff;
+} 
+
+.achtergrond_avond{
+	background-color: #373D4B;
+}
+
+.afbeelding_avond{
+	background-image: url("img/avond.jpg");
+}
+
+.tijdskleur_avond{
+	color: #555B6A;
+}
+
+.landkleur_avond{
+	color:#9EA4B2;
+}
+
+
+
+
+/*NACHT*/
+
+.datumkleur_nacht{
+	color:#D2CECC;
+} 
+
+.groetkleur_nacht{
+	color:#ffffff;
+}
+
+.achtergrond_nacht{
+	background-color:#000000;
+}
+
+.tijdskleur_nacht{
+	color:#4D4D4D;
+}
+
+.landkleur_nacht{
+	color:#9F9F9F;
+}
+
+.afbeelding_nacht{
+	background-image: url("img/nacht.jpg");
+
+}
+
+
+
+@media only screen and (min-width:650px) and (max-width:999px){
+
+	
+	#afbeeldingDag{
+		height:300px;
+	}
+
+	body{
+		margin-right:30px;
+		margin-left:30px;
+	}
+}
+
+
+
+@media only screen and (min-width:1000px){
+
+	body{
+		margin-right:40px;
+		margin-left:40px;
+	}
+
+	#datumDag{
+		font-size:1.2rem;
+		margin-top:30px;
+	}
+
+	#groet{
+		font-size: 1.6rem;
+	}
+
+	#tekstje{ 
+		font-size: 2.5rem;
+	}
+
+	.land{
+		font-size: 3.2rem;
+	}
+
+	#deKlok {
+	    font-size: 8.2rem;
+	}
+
+	.deTijd{
+		display: flex;
+		flex-direction: row;
+		flex-wrap:nowrap;
+		margin-top:100px;
+	}
+
+	#tekstje{
+		order:1;
+		margin-bottom:0;
+		width:50%;
+	}
+
+	#deKlok{
+		order:3;
+		float:right;
+		left: 0;
+    	transform: translateX(8.5%) translateY(120px);
+    	width: 46%;
+    	text-align: center;
+	}
+
+	#afbeeldingDag{
+		order:2;
+		width:50%;
+		margin-top:55px;
+		background-position: left top;
+		height:400px;
+	}
+}
